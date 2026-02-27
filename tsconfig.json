@@ -1,0 +1,22 @@
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/fork/github/<YOUR_GITHUB_USERNAME>/<YOUR_REPO>?startScript=dev)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-<YOUR_REPO>-181717?logo=github)](https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO>)
+
+# Low-Poly BR — PvP + PvE (StackBlitz-ready)
+
+Runs 100% in the browser via **StackBlitz WebContainers**. Uses Colyseus + the **standard WebSocket transport** (pure JS) compatible with WebContainers.
+
+## ▶️ Run on StackBlitz
+1. Open StackBlitz and **drag & drop** this unzipped folder into the editor.
+2. It auto-installs and **auto-runs** via `.stackblitzrc` (`npm run dev`).
+3. Open the preview → click **PLAY PvP (32)** or **PLAY PvE (32)**.
+
+## Manual commands (if needed)
+
+```bash
+npm install --legacy-peer-deps
+npm run dev
+```
+
+## Notes
+- WebContainers block native Node addons, so we use `@colyseus/ws-transport` (pure JS).
+- Client SDK connects with an **HTTP** base (matchmaking) then upgrades to WebSocket.

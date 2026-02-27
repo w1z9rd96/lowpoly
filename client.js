@@ -1,0 +1,1 @@
+html,body{margin:0;height:100%;overflow:hidden;font-family:system-ui;}#game{width:100vw;height:100vh;background:#0e1116;}#hud{position:fixed;top:10px;left:10px;z-index:10;}

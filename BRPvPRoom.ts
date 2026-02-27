@@ -1,0 +1,1 @@
+export const WEAPONS={ar:{rpm:600,damage:34,maxRange:140}}; export const recoilFor=(w,i,ads)=>({dyaw:0,dpitch:0});

@@ -1,0 +1,1 @@
+import { Client as ColyseusClient } from 'https://unpkg.com/@colyseus/sdk@0.16.21/dist/index.mjs'; const colyseus=new ColyseusClient(location.origin); document.getElementById('playPvp').onclick=async()=>{ await colyseus.joinOrCreate('br-pvp'); }; document.getElementById('playPve').onclick=async()=>{ await colyseus.joinOrCreate('br-pve'); }; console.log('Client ready');
